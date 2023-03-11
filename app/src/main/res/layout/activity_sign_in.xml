@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".signinActivity">
+    <ImageView
+
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@drawable/logoca2" />
+
+    <EditText
+        android:id="@+id/namesi"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/bg"
+        android:hint="name"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/emailsi"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+
+        android:layout_marginTop="110dp"
+        android:background="@drawable/bg"
+        android:hint="email"
+
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <EditText
+        android:id="@+id/passwordsi"
+        android:layout_width="350dp"
+        android:layout_height="60dp"
+
+        android:layout_marginTop="195dp"
+        android:background="@drawable/bg"
+        android:hint="password"
+
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/logo" />
+
+    <Button
+        android:id="@+id/signupsi"
+        android:layout_width="186dp"
+        android:layout_height="71dp"
+        android:text="sign-up"
+        android:background="@drawable/button_background"
+
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordsi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
